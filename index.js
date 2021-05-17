@@ -1,4 +1,3 @@
-
 //vefify if is IP mask
 const verifyIP = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/.test("129.168.0.100");
 
@@ -23,3 +22,12 @@ const cpfFormatado = cpf.replace(
 );
 
 console.log(cpfFormatado); 
+
+// the code bellow parse Json to string and clean bars of strings 
+const string = '{"name": "José"}'
+const parseString = JSON.stringify(string)
+const cleanBars = parseStringToJson.replace(/[\\"" {}]/g, '')
+console.log(parseString)
+console.log(`String sem Barra :${cleanBars}`)
+
+
